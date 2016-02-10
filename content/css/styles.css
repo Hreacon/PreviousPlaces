@@ -1,0 +1,17 @@
+label, input {
+  display:inline-block;
+}
+label {
+  width:29%;
+  text-align: left;
+}
+input {
+  width:70%;
+}
+input[type=submit] {
+  width:100%;
+}
+form{
+  width:80%;
+  margin:auto;
+}

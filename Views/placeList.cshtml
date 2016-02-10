@@ -1,0 +1,9 @@
+@Html.Partial("header.cshtml")
+<ul>
+  @foreach(var place in Model)
+  {
+    <li><a href="/city/@place.GetId()">@place.GetCity()</a></li>
+  }
+</ul>
+@Html.Partial("addform.cshtml")
+<a href="/clearAll">Clear List</a>

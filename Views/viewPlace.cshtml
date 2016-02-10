@@ -1,0 +1,9 @@
+@Html.Partial("header.cshtml")
+<h2>@Model.GetCity()</h2>
+<ul>
+  <li>@Model.GetDescription()</li>
+  <li>@Model.GetStayLength()</li>
+  <li>@Model.GetPicture()</li>
+</ul>
+<a href="/edit/@Model.GetId()">Edit this place!</a>
+<a href="/">Go home!</a>

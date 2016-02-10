@@ -1,0 +1,12 @@
+@Html.Partial("header.cshtml")
+<form action="/savePlace" method="post">
+  <input type="hidden" name="id" value="@Model.GetId()">
+  <label for="city">City</label><input type="text" name="city" value="@Model.GetCity()">
+  <label for="description">Desc</label><input type="text" name="description" value="@Model.GetDescription()">
+  <label for="stayLength">Stay Length</label><input type="text" name="stayLength" value="@Model.GetStayLength()">
+  <label for="picture">url to pic</label><input type="text" name="picture" value="@Model.GetPicture()">
+  <input type="submit" value="Update Place">
+</form>
+<script type="text/javascript">
+  $("input[name=city]").focus();
+</script>
